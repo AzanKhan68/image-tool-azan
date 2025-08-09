@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azan World - Image Generation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Azan World</h1>
+    </header>
+
+    <main class="container">
+        <section class="tool-section">
+            <div class="input-group">
+                <textarea id="prompt-input" placeholder="Describe the image you want to generate..."></textarea>
+                <div class="controls">
+                    <select id="size-select">
+                        <option value="1:1">Square (1:1)</option>
+                        <option value="16:9">Widescreen (16:9)</option>
+                        <option value="9:16">Portrait (9:16)</option>
+                        <option value="4:3">Classic (4:3)</option>
+                    </select>
+                    <button id="generate-btn" class="neon-btn">Generate Image 🚀</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div id="image-grid" class="image-grid">
+                </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
